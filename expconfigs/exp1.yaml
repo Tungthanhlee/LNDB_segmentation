@@ -1,0 +1,25 @@
+EXP: "exp1"
+
+
+MODEL:
+  DICE_LOSS: True
+
+DATA:
+  SEG_CLASSES: 2
+
+METRIC:
+  SIGMOID: False
+
+  
+TRAIN:
+  MODEL: "unet_CT_dsv_3D"
+  EPOCHS: 50
+  BATCH_SIZE: 8
+  AUGMENTATION: False
+  FOLD: 2
+
+VAL:
+  BATCH_SIZE: 8
+  FOLD: 2
+
+  

@@ -1,0 +1,9 @@
+EXP: 'exp0_fold0'
+
+DATA:
+  MIXUP_PROB: 0.5
+
+TRAIN:
+  MODEL: "unet_3D"
+  BATCH_SIZE: 512
+  EPOCHS: 2

@@ -1,0 +1,23 @@
+EXP: "exp2_server"
+
+
+MODEL:
+  DICE_LOSS: True
+
+DATA:
+  SEG_CLASSES: 2
+
+METRIC:
+  SIGMOID: False
+
+  
+TRAIN:
+  MODEL: "unet_CT_dsv_3D"
+  EPOCHS: 100
+  BATCH_SIZE: 32
+  AUGMENTATION: True
+
+VAL:
+  BATCH_SIZE: 32
+
+  

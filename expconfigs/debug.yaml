@@ -1,0 +1,11 @@
+EXP: 'debug'
+
+TRAIN:
+  
+  BATCH_SIZE: 8
+  EPOCHS: 2
+VAL:
+  BATCH_SIZE: 8
+
+
+

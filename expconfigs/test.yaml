@@ -1,0 +1,23 @@
+EXP: "exp1"
+
+
+MODEL:
+  DICE_LOSS: True
+  WEIGHT: "/media/tungthanhlee/SSD/grand_challenge/dataset/LNDB_segmentation/weights/best_exp1_unet_CT_dsv_3D_fold3.pth"
+
+DATA:
+  SEG_CLASSES: 2
+
+METRIC:
+  SIGMOID: False
+
+
+TRAIN:
+  MODEL: "unet_CT_dsv_3D"
+
+
+TEST:
+  BATCH_SIZE: 16
+  FOLD: 3
+
+  

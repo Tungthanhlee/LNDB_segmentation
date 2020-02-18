@@ -1,0 +1,25 @@
+EXP: "exp5"
+
+
+MODEL:
+  DICE_LOSS: True
+
+DATA:
+  SEG_CLASSES: 2
+
+METRIC:
+  SIGMOID: False
+
+  
+TRAIN:
+  MODEL: "unet_nonlocal_3D"
+  EPOCHS: 50
+  BATCH_SIZE: 8
+  AUGMENTATION: False
+  FOLD: 0
+
+VAL:
+  BATCH_SIZE: 8
+  FOLD: 0
+
+  

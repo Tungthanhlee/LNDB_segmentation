@@ -1,0 +1,21 @@
+EXP: "exp3"
+
+
+MODEL:
+  BCE_LOSS: True
+
+DATA:
+  SEG_CLASSES: 1
+
+METRIC:
+  SIGMOID: True
+
+  
+TRAIN:
+  MODEL: "unet_grid_attention_3D"
+  EPOCHS: 50
+  BATCH_SIZE: 8
+  AUGMENTATION: False
+
+VAL:
+  BATCH_SIZE: 8

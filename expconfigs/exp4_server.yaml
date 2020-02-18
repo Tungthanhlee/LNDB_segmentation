@@ -1,0 +1,23 @@
+EXP: "exp4_server"
+
+
+MODEL:
+  BCE_LOSS: True
+
+DATA:
+  SEG_CLASSES: 1
+
+METRIC:
+  SIGMOID: True
+
+  
+TRAIN:
+  MODEL: "unet_3D"
+  EPOCHS: 100
+  BATCH_SIZE: 32
+  AUGMENTATION: False
+
+VAL:
+  BATCH_SIZE: 32
+
+  
